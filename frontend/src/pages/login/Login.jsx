@@ -23,10 +23,11 @@ const Login = () => {
 
 				<form onSubmit={handleSubmit}>
 					<div>
-						<label className='label p-2'>
+						<label className='label p-2' htmlFor="username">
 							<span className='text-base text-white label-text'>Username</span>
 						</label>
-						<input
+						<input 
+						    id="username"
 							type='text'
 							placeholder='Enter username'
 							className='w-full input input-bordered h-10'
@@ -36,10 +37,11 @@ const Login = () => {
 					</div>
 
 					<div>
-						<label className='label'>
+						<label className='label' htmlFor="password">
 							<span className='text-base text-white label-text'>Password</span>
 						</label>
 						<input
+						    id="password"
 							type='password'
 							placeholder='Enter Password'
 							className='w-full input input-bordered h-10'
