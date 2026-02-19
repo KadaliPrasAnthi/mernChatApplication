@@ -18,8 +18,8 @@ const useLogin = () => {
 			});
 
 			 const data = await res.json();
-			 const text = await res.text();
-            console.log("RAW RESPONSE:", text);
+			 // const text = await res.text();
+            // console.log("RAW RESPONSE:", text);
 
 			if (data.error) {
 				throw new Error(data.error);
